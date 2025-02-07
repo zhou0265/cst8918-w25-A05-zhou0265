@@ -43,3 +43,8 @@ variable "admin_username" {
   type        = string
   default     = "azureadmin"
 }
+# 4.2 Resource Group
+resource "azurerm_resource_group" "rg" {
+  name     = "${var.labelPrefix}-A05-RG"
+  location = var.region
+}
