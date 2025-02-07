@@ -29,7 +29,6 @@ provider "cloudinit" {
 variable "labelPrefix" {
   description = "Your college username"
   type        = string
-  default     = "zhou0265"
 }
 
 variable "region" {
